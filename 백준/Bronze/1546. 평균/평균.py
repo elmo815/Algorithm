@@ -1,8 +1,4 @@
-subject = int(input())
-scores = list(map(int, input().split()))
-M = max(scores)
+N = int(input())
+a = list(map(int,input().split()))
 
-for i in range(subject):
-    scores[i] = scores[i]/M*100
-
-print(sum(scores)/subject)
+print((sum(a)/max(a)*100)/N)
