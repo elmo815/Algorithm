@@ -1,10 +1,11 @@
-A = set(range(1, 10000))
-B = set()  
-for num in A :
-    for n in str(num):
-        num += int(n)
-    B.add(num) 
+A = set(range(1, 10001)) 
+B = set()
 
-C = A - B
-for C in sorted(C): 
+for i in A : #
+    for n in str(i):
+        i += int(n)
+    B.add(i) 
+
+C = A - B 
+for C in sorted(C):  
     print(C)
