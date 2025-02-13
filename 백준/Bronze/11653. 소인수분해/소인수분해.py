@@ -1,11 +1,11 @@
-number = int(input())
-result = []
-while number != 1:
-    for i in range(2, number + 1):
-        if number % i == 0:
-            result.append(i)
-            number = number // i
+N = int(input())
+A = []
+while N != 1:
+    for i in range(2, N + 1):
+        if N % i == 0:
+            A.append(i)
+            N = N // i
             break
 
-for i in result:
+for i in A:
     print(i)
